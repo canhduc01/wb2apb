@@ -1,0 +1,73 @@
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+Start time: 16:28:18 on Mar 28,2023
+vlog -writetoplevels questa.tops -timescale 1ns/1ns "+incdir+../libs/uvm-1.1d/src" -f filelist_rtl.f -cover bcefs -f filelist_tb.f -l vlog.log 
+-- Compiling module WB_to_APB
+-- Compiling package uvm_pkg
+** Warning: ** while parsing file included at ../src/WB2APB_top_tb.sv(12)
+** while parsing file included at ../inc/include.svh(7)
+** while parsing macro expansion: 'uvm_do_with' starting at ../src/WB2APB_sequence.sv(52)
+** at ../src/WB2APB_sequence.sv(52): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: ** while parsing file included at ../src/WB2APB_top_tb.sv(12)
+** while parsing file included at ../inc/include.svh(7)
+** while parsing macro expansion: 'uvm_do_with' starting at ../src/WB2APB_sequence.sv(52)
+** at ../src/WB2APB_sequence.sv(52): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: ** while parsing file included at ../src/WB2APB_top_tb.sv(12)
+** while parsing file included at ../inc/include.svh(7)
+** while parsing macro expansion: 'uvm_do_with' starting at ../src/WB2APB_sequence.sv(61)
+** at ../src/WB2APB_sequence.sv(61): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: ** while parsing file included at ../src/WB2APB_top_tb.sv(12)
+** while parsing file included at ../inc/include.svh(7)
+** while parsing macro expansion: 'uvm_do_with' starting at ../src/WB2APB_sequence.sv(61)
+** at ../src/WB2APB_sequence.sv(61): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: ** while parsing file included at ../src/WB2APB_top_tb.sv(12)
+** while parsing file included at ../inc/include.svh(7)
+** while parsing macro expansion: 'uvm_do_with' starting at ../src/WB2APB_sequence.sv(94)
+** at ../src/WB2APB_sequence.sv(94): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: ** while parsing file included at ../src/WB2APB_top_tb.sv(12)
+** while parsing file included at ../inc/include.svh(7)
+** while parsing macro expansion: 'uvm_do_with' starting at ../src/WB2APB_sequence.sv(94)
+** at ../src/WB2APB_sequence.sv(94): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: ** while parsing file included at ../src/WB2APB_top_tb.sv(12)
+** while parsing file included at ../inc/include.svh(7)
+** while parsing macro expansion: 'uvm_do_with' starting at ../src/WB2APB_sequence.sv(103)
+** at ../src/WB2APB_sequence.sv(103): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: ** while parsing file included at ../src/WB2APB_top_tb.sv(12)
+** while parsing file included at ../inc/include.svh(7)
+** while parsing macro expansion: 'uvm_do_with' starting at ../src/WB2APB_sequence.sv(103)
+** at ../src/WB2APB_sequence.sv(103): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+-- Compiling package WB2APB_top_tb_sv_unit
+-- Importing package uvm_pkg
+** Warning: ../src/WB2APB_sequence.sv(52): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: ../src/WB2APB_sequence.sv(52): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: ../src/WB2APB_sequence.sv(61): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: ../src/WB2APB_sequence.sv(61): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: ../src/WB2APB_sequence.sv(94): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: ../src/WB2APB_sequence.sv(94): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: ../src/WB2APB_sequence.sv(103): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: ../src/WB2APB_sequence.sv(103): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: ../src/WB2APB_sequence.sv(27): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+-- Compiling interface WB2APB_interface
+** Warning: ../src/WB2APB_sequence.sv(52): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: ../src/WB2APB_sequence.sv(52): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: ../src/WB2APB_sequence.sv(61): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: ../src/WB2APB_sequence.sv(61): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: ../src/WB2APB_sequence.sv(94): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: ../src/WB2APB_sequence.sv(94): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: ../src/WB2APB_sequence.sv(103): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: ../src/WB2APB_sequence.sv(103): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+-- Compiling module WB2APB_sva
+-- Compiling module WB2APB_top_tb
+-- Compiling module apb_slave
+-- Scanning library directory '../inc'
+-- Scanning library directory '../libs/Module_APB_WB'
+-- Scanning library directory '../libs/uvm-1.1d/src'
+-- Scanning library directory '../src'
+
+Referenced (but uncompiled) modules or primitives:
+	apb_slave
+
+Top level modules:
+	WB2APB_sva
+	WB2APB_top_tb
+End time: 16:28:20 on Mar 28,2023, Elapsed time: 0:00:02
+Errors: 0, Warnings: 25

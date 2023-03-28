@@ -1,0 +1,106 @@
+# ** Warning: (vsim-16036) -assertcover option is now deprecated and will be removed from future releases. Please refer to verror output for more details.
+# vsim WB2APB_top_tb -solvefaildebug -assertdebug -assertcover -fsmdebug -sva -coverage -voptargs="+acc" -l vsim.log "+UVM_VERBOSITY=UVM_MEDIUM" "+UVM_TESTNAME=WB2APB_test" -sv_lib ../libs/uvm-1.1d/lib/uvm_dpiWin64 -wlf vsim.wlf -batch -do "coverage save -onexit -assert -code bcefs -directive -cvg coverage.ucdb; add wave -r /WB2APB_top_tb/*; run -all; quit" 
+# Start time: 16:28:21 on Mar 28,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "WB_to_APB(fast)".
+# ** Warning: ../src/WB2APB_top_tb.sv(119): (vopt-2685) [TFMPC] - Too few port connections for 'intf'.  Expected 11, found 10.
+# ** Warning: ../src/WB2APB_top_tb.sv(119): (vopt-2718) [TFMPC] - Missing connection for port 'prdata'.
+# ** Warning: ../src/WB2APB_sequence.sv(27): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.uvm_pkg(fast)
+# Loading work.WB2APB_top_tb_sv_unit(fast)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.WB2APB_top_tb(fast)
+# Loading work.WB2APB_interface(fast)
+# Loading work.WB_to_APB(fast)
+# Loading work.WB2APB_interface(fast)
+# ** Warning: (vsim-3839) Variable '/WB2APB_top_tb/pready', driven via a port connection, is multiply driven. See ../src/WB2APB_top_tb.sv(103).
+#    Time: 0 ns  Iteration: 0  Instance: /WB2APB_top_tb/intf File: ../src/WB2APB_top_tb.sv Line: 119
+# ** Warning: (vsim-3839) Variable '/WB2APB_top_tb/pslerr', driven via a port connection, is multiply driven. See ../src/WB2APB_top_tb.sv(103).
+#    Time: 0 ns  Iteration: 0  Instance: /WB2APB_top_tb/intf File: ../src/WB2APB_top_tb.sv Line: 119
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'pwdata'. The port definition is at: ../src/WB2APB_interface.sv(17).
+#    Time: 0 ns  Iteration: 0  Instance: /WB2APB_top_tb/intf File: ../src/WB2APB_top_tb.sv Line: 119
+# Loading .\../libs/uvm-1.1d/lib/uvm_dpiWin64.dll
+# 
+# coverage save -onexit -assert -code bcefs -directive -cvg coverage.ucdb
+# add wave -r /WB2APB_top_tb/*
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test WB2APB_test...
+# ----------------------------------------------------------------
+# Name                         Type                    Size  Value
+# ----------------------------------------------------------------
+# uvm_test_top                 WB2APB_test             -     @448 
+#   env                        WB2APB_model_env        -     @456 
+#     WB2APB_agnt              WB2APB_agent            -     @468 
+#       driver                 WB2APB_driver           -     @506 
+#         rsp_port             uvm_analysis_port       -     @523 
+#         seq_item_port        uvm_seq_item_pull_port  -     @514 
+#       monitor                WB2APB_monitor          -     @485 
+#         item_collected_port  uvm_analysis_port       -     @497 
+#       sequencer              WB2APB_sequencer        -     @532 
+#         rsp_export           uvm_analysis_export     -     @540 
+#         seq_item_export      uvm_seq_item_pull_imp   -     @646 
+#         arbitration_queue    array                   0     -    
+#         lock_queue           array                   0     -    
+#         num_last_reqs        integral                32    'd1  
+#         num_last_rsps        integral                32    'd1  
+#     WB2APB_scb               WB2APB_scoreboard       -     @476 
+#       item_collected_export  uvm_analysis_imp        -     @662 
+# ----------------------------------------------------------------
+# UVM_INFO ../libs/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 70: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../src/WB2APB_base_test.sv(53) @ 70: uvm_test_top [WB2APB_test] ---------------------------------------
+# UVM_INFO ../src/WB2APB_base_test.sv(54) @ 70: uvm_test_top [WB2APB_test] ----           TEST PASS           ----
+# UVM_INFO ../src/WB2APB_base_test.sv(55) @ 70: uvm_test_top [WB2APB_test] ---------------------------------------
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    5
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [TEST_DONE]     1
+# [WB2APB_test]     3
+# ** Note: $finish    : ../libs/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 70 ns  Iteration: 53  Instance: /WB2APB_top_tb
+# Saving coverage database on exit...
+# End time: 16:28:29 on Mar 28,2023, Elapsed time: 0:00:08
+# Errors: 0, Warnings: 7
